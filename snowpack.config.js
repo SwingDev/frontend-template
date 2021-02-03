@@ -8,6 +8,14 @@ module.exports = {
     src: { url: '/dist' },
   },
   plugins: [
+    [
+      '@snowpack/plugin-run-script',
+      {
+        cmd: 'npm run lint',
+        name: 'lint',
+        watch: 'npm run lint:watch',
+      },
+    ],
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
