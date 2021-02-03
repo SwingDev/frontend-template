@@ -1,0 +1,19 @@
+{
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "paths": { "~/*": ["*"] },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  }
+}
