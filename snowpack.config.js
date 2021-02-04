@@ -21,6 +21,9 @@ module.exports = {
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
   ],
+  packageOptions: {
+    polyfillNode: true, // for node packages to run during testing using es imports
+  },
   routes: [
     /* Enable an SPA Fallback in development: */
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
@@ -31,9 +34,6 @@ module.exports = {
     splitting: true,
     target: 'es2018',
     treeshake: true,
-  },
-  packageOptions: {
-    /* ... */
   },
   devOptions: {
     /* ... */
