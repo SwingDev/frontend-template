@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/SwingDev/frontend-template/compare/v0.0.3...v0.0.4) (2021-02-04)
+
+
+### Features
+
+* **Tests:** added example tests ([e960c15](https://github.com/SwingDev/frontend-template/commit/e960c1573d2065a75ebd625ff6e34c016bca2311))
+* **Tests:** added tests dependencies and scripts ([436dcdf](https://github.com/SwingDev/frontend-template/commit/436dcdf5e1aa4ad81959eafef6a4e3093385aa79))
+* **Tests:** updated example application structure ([5ece7e1](https://github.com/SwingDev/frontend-template/commit/5ece7e14e2a5885696beed6419b5f7f38e438bfc))
+
 ### [0.0.3](https://github.com/SwingDev/frontend-template/compare/v0.0.1...v0.0.3) (2021-02-04)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@swingdev/frontend-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
