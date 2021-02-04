@@ -17,6 +17,11 @@ $color: black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 5em;
   background-color: $color;
+}
+
+.rocket {
+  cursor: pointer;
+  font-size: 6em;
+  user-select: none;
 }
