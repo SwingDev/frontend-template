@@ -1,8 +1,6 @@
 # SwingDev Front-end template
 
-## Node version
-
-[https://github.com/nvm-sh/nvm]
+## Node version managed by [nvm](https://github.com/nvm-sh/nvm)
 
 The supported node version is set in the `.nvmrc` file, which is consumed by `nvm`.
 Use the command below to install and use the proper node version:
@@ -13,9 +11,12 @@ nvm use
 
 ## Commit messages
 
-### Conventional commits
+### Pre-commit hooks
 
-[https://www.conventionalcommits.org/en/v1.0.0/]
+Pre-commit hooks are performed by [Husky](https://github.com/typicode/husky#readme)
+They are configured in `husky` field in the `package.json` file
+
+### [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 Setup forces using the conventional commits message format.
 
@@ -26,18 +27,14 @@ Setup forces using the conventional commits message format.
 
 See the section below for details about the commit message format.
 
-### Commit lint
-
-[https://commitlint.js.org/#/]
+### [Commit lint](https://commitlint.js.org/#/)
 
 There is a pre-commit hook that validates the message.
 The rules of commit messages are described in the `commitlint.config.js` file.
 
-### Release
+### [Standard Version](https://github.com/conventional-changelog/standard-version) release
 
-[https://github.com/conventional-changelog/standard-version]
-
-Use the command below
+The command below
 
 - bumps the version
 - adds the tag
@@ -61,21 +58,21 @@ The project uses `Snowpack` as a build tool. The configuration might be tuned in
 ```sh
 # install dependencies
 npm i
-# start developing
+# run development server and 
 npm start
 # build project
 npm build
 ```
 
-### Hot module replacement
+### [Hot module replacement](https://snowpack.dev/concepts/hot-module-replacement)
 
-[https://snowpack.dev/concepts/hot-module-replacement]
+The `src/index.tsx` file includes the lines to enable hot module replacement. 
 
-The `src/index.tsx` file includes the lines to enable hot module replacement. The configuration is located in the `web-test-runner.config.js`
+### Tests
 
-## Typescript
+The configuration is located in the `web-test-runner.config.js`
 
-[https://www.typescriptlang.org/]
+## [Typescript](https://www.typescriptlang.org/)
 
 The project includes typescript, configured in `tsconfig.json` file
 
@@ -85,19 +82,28 @@ There is an alias `~` added in typescript and snowpack config to allow short imp
 
 > Examples of relative import
 >
-> - `import { SomeComponent } from `~/components/some-component`
-> - `import { someUtil } from `~/utils/some-util`
+> - `import { SomeComponent } from '~/components/some-component'`
+> - `import { someUtil } from '~/utils/some-util'`
 
-## Eslint
-
-[https://eslint.org/]
+## [Eslint](https://eslint.org/)
 
 The code linting and style is forced by the set of `eslint` rules and plugins.
 The full list could be reviewed and modified when needed in the `.eslintrc.js` file.
 
+### Lining scripts
+
+Linting is performed when development server is running every time the file is saved. To perform manual lining use following commands:
+
+```sh
+npm run lint        # runs linter 
+# or
+npm run lint:fix    # runs linter and performs auto-fix of possible issues
+```
+
 ### Pre-commit hook
 
-The linting is performed on every commit by the `lint-staged` library. The configuration is located in the `lint-staged` field of the `package.json` file.
+The linting is performed on every commit by the [lint-staged](https://github.com/okonet/lint-staged#readme) library. 
+The configuration is located in the `lint-staged` field of the `package.json` file.
 
 ## Prettier
 
