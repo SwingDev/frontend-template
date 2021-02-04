@@ -1,5 +1,20 @@
 # SwingDev Front-end template
 
+The template repository for quick starting frontend applications. Utilizes some best practices used by SwingDev developers.
+
+## Core features:
+
+- Node version consistency
+- Commit message linter and rules
+- Eslint
+- Build config
+- Typescript
+- SCSS
+- React
+- Tests
+
+> Please note: the work is still in progress. The template might, and most surely will change in the future.
+
 ## Node version managed by [nvm](https://github.com/nvm-sh/nvm)
 
 The supported node version is set in the `.nvmrc` file, which is consumed by `nvm`.
@@ -138,3 +153,14 @@ The config file `.prettierc` is located in the project root. The rules are align
 The project includes `react` and `react-dom` dependencies with typescript definitions. 
 
 > Start from `App.tsx` file to see the application code.
+
+## LICENSE
+
+MIT License
+Copyright (c) 2021 SwingDev
+
+See [LICENSE.md](LICENSE.md) for details.
+
+---
+
+Made with ❤️ at [SwingDev](https://www.swing.dev/)
