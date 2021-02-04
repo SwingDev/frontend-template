@@ -13,8 +13,8 @@ nvm use
 
 ### Pre-commit hooks
 
-Pre-commit hooks are performed by [Husky](https://github.com/typicode/husky#readme)
-They are configured in `husky` field in the `package.json` file
+[Husky](https://github.com/typicode/husky#readme) performs pre-commit hooks.
+The `husky` field in the `package.json` includes configuration.
 
 ### [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
@@ -51,26 +51,19 @@ npm run release
 
 [https://www.snowpack.dev/]
 
-The project uses `Snowpack` as a build tool. The configuration might be tuned in the `snowpack.config.js` file.
+The project uses `Snowpack` as a build tool. Feel free to edit the `snowpack.config.js` file to tune the configuration.
 
 ### Scripts
 
 ```sh
-# install dependencies
-npm i
-# run development server and 
-npm start
-# build project
-npm build
+npm install     # installs dependencies
+npm start       # run development server and
+npm build       # builds the project
 ```
 
 ### [Hot module replacement](https://snowpack.dev/concepts/hot-module-replacement)
 
-The `src/index.tsx` file includes the lines to enable hot module replacement. 
-
-### Tests
-
-The configuration is located in the `web-test-runner.config.js`
+The `src/index.tsx` file includes the lines to enable hot module replacement.
 
 ## [Typescript](https://www.typescriptlang.org/)
 
@@ -85,30 +78,65 @@ There is an alias `~` added in typescript and snowpack config to allow short imp
 > - `import { SomeComponent } from '~/components/some-component'`
 > - `import { someUtil } from '~/utils/some-util'`
 
-## [Eslint](https://eslint.org/)
+## Tests
 
-The code linting and style is forced by the set of `eslint` rules and plugins.
-The full list could be reviewed and modified when needed in the `.eslintrc.js` file.
+We use [Web Test Runner](https://modern-web.dev/docs/test-runner/overview/) as a testing library with help of [Snowpack web-test-runner-plugin](https://www.npmjs.com/package/@snowpack/web-test-runner-plugin)
 
-### Lining scripts
+The configuration is in the `web-test-runner.config.js`
 
-Linting is performed when development server is running every time the file is saved. To perform manual lining use following commands:
+### Assertion library
+
+This template includes [Chai](https://github.com/chaijs/chai) as an assertion library. 
+
+### Testing library
+
+[Testing Library](https://testing-library.com/) is used to test React components. 
+
+That includes:
+- `@testing-library/react`
+- `@testing-library/react-hooks`
+- `@testing-library/user-event`
+
+Also, since auto-detection does not work for bundled tests, the [React Test Renderer](https://reactjs.org/docs/test-renderer.html) performs rendering while testing hooks. Make sure you import `react-hooks` as follows:
+
+```typescript
+import { renderHook } from '@testing-library/react-hooks/native';
+```
+
+See `__tests__` folder for more examples.
+
+### Scripts
 
 ```sh
-npm run lint        # runs linter 
-# or
-npm run lint:fix    # runs linter and performs auto-fix of possible issues
+npm run test            # runs single tests pass
+npm run test:watch      # starts tests in watch mode
+```
+
+## Linting
+
+[Eslint](https://eslint.org/) forces the code style.
+The full list of rules, plugins, and extended configs could be reviewed and modified when needed in the `.eslintrc.js` file.
+
+### Linting scripts
+
+When the development server is running, linting happens every time the file is saved. To perform manual lining, use the following commands:
+
+```sh
+npm run lint            # runs linter
+npm run lint:fix        # performs auto-fix of possible issues
 ```
 
 ### Pre-commit hook
 
-The linting is performed on every commit by the [lint-staged](https://github.com/okonet/lint-staged#readme) library. 
+The linting is performed on every commit by the [lint-staged](https://github.com/okonet/lint-staged#readme) library.
 The configuration is located in the `lint-staged` field of the `package.json` file.
 
-## Prettier
+## [Prettier](https://prettier.io/)
 
-There is also a prettier config file `.prettierc` located in the project root. The rules are aligned to match `eslint` settings, however, there is no automatic prettier run, the file exists only to work with IDEs with configured prettier to avoid differences between eslint and default prettier behavior.
+The config file `.prettierc` is located in the project root. The rules are aligned to match `eslint` settings, however, there is no automatic prettier run, the file exists only to work with IDEs with configured prettier to avoid differences between eslint and default prettier behavior.
 
 ## React
 
-The project includes `react` and `react-dom` dependecies with typescipt definitions. The basic application code is in `App.tsx` file 
+The project includes `react` and `react-dom` dependencies with typescript definitions. 
+
+> Start from `App.tsx` file to see the application code.
