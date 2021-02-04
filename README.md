@@ -1,4 +1,4 @@
-# SwingDev Front-end bootstra
+# SwingDev Front-end template
 
 ## Node version
 
