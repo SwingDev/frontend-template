@@ -70,7 +70,7 @@ The project uses `Snowpack` as a build tool. Feel free to edit the `snowpack.con
 
 ```sh
 npm install     # installs dependencies
-npm start       # run development server and
+npm start       # run development server and open http://localhost:8080/
 npm build       # builds the project
 ```
 
@@ -99,13 +99,14 @@ The configuration is in the `web-test-runner.config.js`
 
 ### Assertion library
 
-This template includes [Chai](https://github.com/chaijs/chai) as an assertion library. 
+This template includes [Chai](https://github.com/chaijs/chai) as an assertion library.
 
 ### Testing library
 
-[Testing Library](https://testing-library.com/) is used to test React components. 
+[Testing Library](https://testing-library.com/) is used to test React components.
 
 That includes:
+
 - `@testing-library/react`
 - `@testing-library/react-hooks`
 - `@testing-library/user-event`
@@ -146,11 +147,11 @@ The configuration is located in the `lint-staged` field of the `package.json` fi
 
 ## [Prettier](https://prettier.io/)
 
-The config file `.prettierc` is located in the project root. The rules are aligned to match `eslint` settings, however, there is no automatic prettier run, the file exists only to work with IDEs with configured prettier to avoid differences between eslint and default prettier behavior.
+The config file `.prettierc` is located in the project root. The rules are aligned to match `eslint` settings, however, there is no automatic prettier run: the file exists only to work with IDEs with configured prettier to avoid differences between the eslint and default prettier behavior.
 
 ## React
 
-The project includes `react` and `react-dom` dependencies with typescript definitions. 
+The project includes `react` and `react-dom` dependencies with typescript definitions.
 
 > Start from `App.tsx` file to see the application code.
 
