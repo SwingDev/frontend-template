@@ -47,9 +47,7 @@ npm run release
 
 ## Development
 
-### Snowpack
-
-[https://www.snowpack.dev/]
+### [Snowpack](https://www.snowpack.dev/)
 
 The project uses `Snowpack` as a build tool. Feel free to edit the `snowpack.config.js` file to tune the configuration.
 
@@ -108,7 +106,7 @@ See `__tests__` folder for more examples.
 ### Scripts
 
 ```sh
-npm run test            # runs single tests pass
+npm run test            # runs tests
 npm run test:watch      # starts tests in watch mode
 ```
 
