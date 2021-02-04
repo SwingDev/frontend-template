@@ -35,12 +35,22 @@ The `husky` field in the `package.json` includes configuration.
 
 Setup forces using the conventional commits message format.
 
-> Examples of correct messages:
->
-> - `fix: fixed a bug`
-> - `feat(SWG-123): added new feature`
+The message should consist of:
 
-See the section below for details about the commit message format.
+```
+type(Scope): subject
+```
+
+Available values for `type`:
+
+```
+build | chore | ci | config | docs | feat | fix | perf | refactor | revert | style | test
+```
+
+> Examples of a correct messages:
+>
+> - `feat(SWG-123): added a cool feature`
+> - `fix(BUG-987): fixed a nasty bug`
 
 ### [Commit lint](https://commitlint.js.org/#/)
 
