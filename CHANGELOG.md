@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/SwingDev/frontend-template/compare/v0.0.4...v0.0.5) (2021-02-04)
+
+
+### Features
+
+* added normalize.css ([5f36f85](https://github.com/SwingDev/frontend-template/commit/5f36f8501db6df2bf92221b6aed57ac68942eea8))
+
 ### [0.0.4](https://github.com/SwingDev/frontend-template/compare/v0.0.3...v0.0.4) (2021-02-04)
 
 
