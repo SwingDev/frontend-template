@@ -1,13 +1,15 @@
 html,
 body {
   height: 100%;
+  font-family: sans-serif;
 }
 
 #root {
   height: 100%;
 }
 
-$color: black;
+$color: silver;
+$backgroundColor: black;
 
 .container {
   width: 100%;
@@ -16,11 +18,29 @@ $color: black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $color;
+  background-color: $backgroundColor;
+  color: $color;
 }
 
 .rocket {
   cursor: pointer;
   font-size: 6em;
   user-select: none;
+  margin: 1rem;
+}
+
+button {
+  margin: 1rem;
+}
+
+.launcher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 0.5em 1em;
 }
