@@ -23,6 +23,7 @@ module.exports = {
   ],
   packageOptions: {
     polyfillNode: true, // for node packages to run during testing using es imports
+    types: true
   },
   routes: [
     /* Enable an SPA Fallback in development: */
