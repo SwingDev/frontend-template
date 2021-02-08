@@ -285,6 +285,7 @@ module.exports = {
         forbid: ['>', '}'],
       },
     ],
+    'react/jsx-child-element-spacing': 0,
     'no-irregular-whitespace': 0,
     'no-empty': [
       1,
