@@ -136,7 +136,8 @@ module.exports = {
       },
       { blankLine: 'always', prev: '*', next: 'return' },
     ],
-    indent: [
+    'indent': 'off',
+    '@typescript-eslint/indent': [
       'error',
       2,
       {
@@ -146,6 +147,7 @@ module.exports = {
         ObjectExpression: 1,
         flatTernaryExpressions: false,
         offsetTernaryExpressions: false,
+        ignoredNodes: ['TSTypeParameterInstantiation']
       },
     ],
     'no-multi-spaces': 'error',
