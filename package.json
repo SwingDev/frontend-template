@@ -9,7 +9,8 @@
     "lint:watch": "esw -w --clear src --ext .js,jsx,.ts,.tsx",
     "release": "standard-version",
     "test": "web-test-runner \"src/**/*.test.{js,jsx,ts,tsx}\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
@@ -39,7 +40,7 @@
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "eslint-plugin-typescript-sort-keys": "^1.5.0",
     "eslint-watch": "^7.0.0",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "react-test-renderer": "^17.0.1",
     "snowpack": "^3.0.1",
@@ -53,11 +54,5 @@
   "lint-staged": {
     "*.ts?(x)": "eslint --fix",
     "*.js?(x)": "eslint --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
