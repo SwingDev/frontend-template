@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/SwingDev/frontend-template/compare/v0.0.5...v0.0.6) (2021-02-08)
+
+
+### Features
+
+* **Redux:** added redux toolkit, react-redux ([1381a6a](https://github.com/SwingDev/frontend-template/commit/1381a6aae0695c6db15e957a6f430bc4baa2f997))
+* **Redux:** sample store, mocked api service ([3105a82](https://github.com/SwingDev/frontend-template/commit/3105a82272eecb381a84d820e6abb9bf80ba7f02))
+* **Redux:** updated sample components and hooks ([c627ff7](https://github.com/SwingDev/frontend-template/commit/c627ff7c8d9591c1e6fc4c2ab70eeed4dcd85754))
+
 ### [0.0.5](https://github.com/SwingDev/frontend-template/compare/v0.0.4...v0.0.5) (2021-02-04)
 
 

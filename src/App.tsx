@@ -1,11 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
-import { Rocket } from '~/components/rocket-launcher/Rocket';
+import { RocketLauncher } from './components/rocket-launcher/RocketLauncher';
+import store from './store/store';
 
 export const App: React.FC = () => {
   return (
-    <div className='container'>
-      <Rocket />
-    </div>
+    <Provider store={store}>
+      <div className='container'>
+        <RocketLauncher />
+      </div>
+    </Provider>
   );
 };

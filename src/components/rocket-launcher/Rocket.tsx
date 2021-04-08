@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { useRocket } from './useRocket';
+import { useRocketLauncher } from './useRocketLauncher';
 
 export const Rocket: React.FC = () => {
-  const { fire, isFired } = useRocket();
+  const { fire, isFired } = useRocketLauncher();
 
   return (
     <div
