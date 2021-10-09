@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "@web/test-runner": "^0.12.7",
     "chai": "^4.3.0",
-    "eslint": "^7.19.0",
+    "eslint": "^8.0.0",
     "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.22.0",
