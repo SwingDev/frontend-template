@@ -39,7 +39,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "eslint-plugin-typescript-sort-keys": "^1.5.0",
-    "eslint-watch": "^7.0.0",
+    "eslint-watch": "^8.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "react-test-renderer": "^17.0.1",
