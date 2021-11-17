@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.0.0",
+    "@commitlint/cli": "^15.0.0",
     "@snowpack/plugin-build-script": "^2.1.0",
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-react-refresh": "^2.4.0",
